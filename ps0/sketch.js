@@ -1,11 +1,11 @@
 //test
 function setup() {
-  createCanvas(600, 600);
-  colorMode(HSB, 600);
+  createCanvas(windowWidth, windowHeight);
+  colorMode(HSB, windowHeight);
 }
 
 function draw() {
-  background(600);
-  stroke(mouseX, 600, 600);
+  background(windowHeight);
+  stroke(mouseX, windowHeight, windowHeight);
   line(0, mouseY, mouseX, mouseY);
 }
