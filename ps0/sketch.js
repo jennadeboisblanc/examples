@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
-  fill(mouseX, 600, 600);
+  background(600);
+  stroke(mouseX, 600, 600);
   line(0, mouseY, mouseX, mouseY);
 }
