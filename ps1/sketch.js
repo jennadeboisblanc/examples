@@ -1,5 +1,6 @@
 var x = 0;
-var direction = 10;
+var speed = 10;
+var direction = 1;
 
 function setup() {
   createCanvas(600, 600);
@@ -9,9 +10,9 @@ function setup() {
 function draw() {
   background(100, 0, 100);
 
-  if (x > width) direction = -direction;
-  if (x < 0) direction = -direction;
+  // if (x > width) direction = -direction;
+  // if (x < 0) direction = -direction;
 
-  x += direction;
-  ellipse(x*1, width/2 - 100, 50, 50);
+  x += speed * direction;
+  ellipse(x*1, width/2, 50, 50);
 }
