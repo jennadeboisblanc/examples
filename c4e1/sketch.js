@@ -13,15 +13,15 @@ function draw() {
 
 function keyPressed() {
     if (keyCode === LEFT_ARROW) {
-      x++;
+      x-= 10;
     }
     else if (keyCode === RIGHT_ARROW) {
-      x--;
+      x+= 10;
     }
     else if (keyCode === UP_ARROW) {
-      y++;
+      y-= 10;
     }
     else if (keyCode === DOWN_ARROW) {
-      y--;
+      y+= 10;
     }
 }
