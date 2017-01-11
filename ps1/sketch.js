@@ -10,6 +10,7 @@ function draw() {
   background(100, 0, 100);
 
   if (x > width) direction = -direction;
+  if (x < 0) direction = -direction;
 
   x += direction;
   ellipse(x*1, width/2 - 100, 50, 50);
