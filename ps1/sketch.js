@@ -10,8 +10,8 @@ function setup() {
 function draw() {
   background(100, 0, 100);
 
-  // if (x > width) direction = -direction;
-  // if (x < 0) direction = -direction;
+  if (x > width) direction = -direction;
+  if (x < 0) direction = -direction;
 
   x += speed * direction;
   ellipse(x*1, width/2, 50, 50);
